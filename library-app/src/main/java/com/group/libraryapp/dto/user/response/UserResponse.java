@@ -8,6 +8,12 @@ public class UserResponse {
     private String name;
     private Integer age;
 
+    public UserResponse(User user) {
+        this.id = user.getId();
+        this.name = user.getName();
+        this.age = user.getAge();
+    }
+
     public UserResponse(long id, User user) {
         this.id = id;
         this.name = user.getName();
@@ -21,14 +27,17 @@ public class UserResponse {
     }
 
     public long getId() {
+
         return id;
     }
 
     public String getName() {
+
         return name;
     }
 
     public Integer getAge() {
+
         return age;
     }
 }
