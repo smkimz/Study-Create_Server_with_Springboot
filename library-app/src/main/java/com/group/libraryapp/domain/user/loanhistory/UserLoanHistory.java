@@ -28,6 +28,17 @@ public class UserLoanHistory {
     }
 
     public void doReturn() {
+
         this.isReturn = true;
+    }
+
+    public String getBookName() {
+
+        return this.bookName;
+    }
+
+    public boolean getIsReturn() {
+
+        return this.isReturn;
     }
 }
